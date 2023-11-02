@@ -1,0 +1,9 @@
+{
+  // The maximum angle you can look at the Travel Anchor to teleport.
+  // Minimum: 1.0
+  "max_angle": 15,
+  
+  // The maximum distance you are allowed to teleport.
+  // Minimum: 1.0
+  "max_distance": 64
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "pipez:block/pipe_core",
+	"textures": {
+		"1": "pipez:block/invar_frame",
+		"2": "pipez:block/energypipe_center",
+		"particle": "pipez:block/invar_frame"
+	}
+}
