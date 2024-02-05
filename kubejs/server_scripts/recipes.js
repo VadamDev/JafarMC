@@ -105,6 +105,15 @@ onEvent('recipes', event => {
 		event.remove({id: 'fluxnetworks:fluxplug'})
 
 		/*
+		  Compact Machines
+		*/
+		event.remove({output: 'compactmachines:wall'})
+
+		event.remove({id: 'compactmachines:tunnels/item'})
+		event.remove({id: 'compactmachines:tunnels/fluid'})
+		event.remove({id: 'compactmachines:tunnels/energy'})
+
+		/*
 		  Travel Anchors
 		*/
 
@@ -390,6 +399,40 @@ onEvent('recipes', event => {
 			F: 'fluxnetworks:flux_core',
 			C: 'minecraft:copper_block'
 		})
+
+		/*
+		  Compact Machines
+		*/
+		event.replaceInput({output: 'compactmachines:machine_tiny'}, 'minecraft:copper_block', 'minecraft:copper_ingot')
+		event.replaceInput({output: 'compactmachines:machine_small'}, 'minecraft:iron_block', 'minecraft:iron_ingot')
+		event.replaceInput({output: 'compactmachines:machine_normal'}, 'minecraft:gold_block', 'minecraft:gold_ingot')
+		event.replaceInput({output: 'compactmachines:machine_giant'}, 'minecraft:diamond_block', 'minecraft:diamond')
+		event.replaceInput({output: 'compactmachines:machine_maximum'}, 'minecraft:netherite_block', 'minecraft:netherite_ingot')
+
+		event.shaped('8x compactmachines:wall', [
+			'FFF',
+			'FRF',
+			'FFF'
+		], {
+			F: 'fluxnetworks:flux_dust',
+			R: 'thermal:rf_coil'
+		})
+
+		event.shapeless(Item.of('compactmachines:tunnel', 2, '{definition:{id:"compactmachines:item"}}'), [
+			'pipez:item_pipe', 'fluxnetworks:flux_dust',
+			'minecraft:redstone'
+		])
+
+		event.shapeless(Item.of('compactmachines:tunnel', 2, '{definition:{id:"compactmachines:fluid"}}'), [
+			'create:fluid_pipe', 'fluxnetworks:flux_dust',
+			'minecraft:redstone'
+			
+		])
+
+		event.shapeless(Item.of('compactmachines:tunnel', 2, '{definition:{id:"compactmachines:energy"}}'), [
+			'pipez:energy_pipe', 'fluxnetworks:flux_dust',
+			'minecraft:redstone'
+		])
 
 		/*
 		  Travel Anchors

@@ -20,7 +20,7 @@ onEvent('recipes', event => {
       			"item": "tconstruct:ichor_slime_crystal"
     		},
     		"C": {
-      			"item": "cataclysm:ignitium_ingot"
+      			"item": "minecraft:netherite_block"
     		},
     		"D": {
      			"item": "tconstruct:cobalt_block"
@@ -35,7 +35,7 @@ onEvent('recipes', event => {
       			"item": "thermal:lumium_block"
     		},
     		"H": {
-      			"item": "twilightforest:fiery_block"
+      			"item": "twilightforest:fiery_ingot"
     		},
     		"I": {
       			"item": "create:zinc_ingot"
@@ -50,7 +50,7 @@ onEvent('recipes', event => {
       			"item": "thermal:constantan_block"
     		},
     		"M": {
-      			"item": "mythicbotany:alfsteel_block"
+      			"item": "mythicbotany:alfsteel_ingot"
     		},
     		"N": {
       			"item": "pneumaticcraft:compressed_iron_block"
@@ -74,7 +74,7 @@ onEvent('recipes', event => {
       			"item": "thermal:electrum_block"
     		},
     		"U": {
-      			"item": "twilightforest:knightmetal_block"
+      			"item": "twilightforest:knightmetal_ingot"
     		},
     		"V": {
       			"item": "tconstruct:sky_slime_crystal"
@@ -92,7 +92,7 @@ onEvent('recipes', event => {
       			"item": "tconstruct:pig_iron_block"
     		},
     		"a": {
-      			"item": "twilightforest:ironwood_block"
+      			"item": "twilightforest:ironwood_ingot"
     		},
     		"b": {
       			"item": "thermal:invar_block"
@@ -290,7 +290,327 @@ onEvent('recipes', event => {
             }
         ],
         "result": {
-            "item": "2x kubejs:ultimate_soup"
+            "item": "4x kubejs:ultimate_soup"
+        }
+    })
+
+  	event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+          "         ",
+          "         ",
+          "  ABCBA  ",
+          "  BDEFB  ",
+          "  CGHIC  ",
+          "  BJKLB  ",
+          "  ABCBA  ",
+          "         ",
+          "         "
+        ],
+        "key": {
+            "A": {
+                "item": "extendedcrafting:black_iron_block"
+            },
+            "B": {
+                "item": "extendedcrafting:black_iron_ingot"
+            },
+            "C": {
+                "item": "thermal:enderium_gear"
+            },
+            "D": {
+                "type": "forge:nbt",
+                "item": "mysticalagriculture:supremium_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "E": {
+                "type": "forge:nbt",
+                "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "F": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_fire_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "G": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_ice_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "H": {
+                "item": "ae2:singularity"
+            },
+            "I": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_lightning_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "J": {
+                "type": "forge:nbt",
+                "item": "blue_skies:charoite_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "K": {
+                "type": "forge:nbt",
+                "item": "bloodmagic:livinghelmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "L": {
+                "type": "forge:nbt",
+                "item": "mythicbotany:alfsteel_helmet",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            }
+        },
+        "result": {
+          "item": "kubejs:fused_helmet"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "         ",
+            "         ",
+            "  ABCBA  ",
+            "  BDEFB  ",
+            "  CGHIC  ",
+            "  BJKLB  ",
+            "  ABCBA  ",
+            "         ",
+            "         "
+        ],
+        "key": {
+            "A": {
+                "item": "extendedcrafting:black_iron_block"
+            },
+            "B": {
+                "item": "extendedcrafting:black_iron_ingot"
+            },
+            "C": {
+                "item": "thermal:enderium_gear"
+            },
+            "D": {
+                "type": "forge:nbt",
+                "item": "mysticalagriculture:supremium_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "E": {
+                "type": "forge:nbt",
+                "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "F": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_fire_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "G": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_ice_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "H": {
+                "item": "ae2:singularity"
+            },
+            "I": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_lightning_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "J": {
+                "type": "forge:nbt",
+                "item": "blue_skies:charoite_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "K": {
+                "type": "forge:nbt",
+                "item": "bloodmagic:livingplate",
+                "count": 1,
+                "nbt": "{Damage:0,livingStats:{maxPoints:100,upgrades:[]}}"
+            },
+            "L": {
+                "type": "forge:nbt",
+                "item": "mythicbotany:alfsteel_chestplate",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            }
+        },
+        "result": {
+          "item": "kubejs:fused_chestplate"
+        }
+})
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "         ",
+            "         ",
+            "  ABCBA  ",
+            "  BDEFB  ",
+            "  CGHIC  ",
+            "  BJKLB  ",
+            "  ABCBA  ",
+            "         ",
+            "         "
+        ],
+        "key": {
+            "A": {
+                "item": "extendedcrafting:black_iron_block"
+            },
+            "B": {
+                "item": "extendedcrafting:black_iron_ingot"
+            },
+            "C": {
+                "item": "thermal:enderium_gear"
+            },
+            "D": {
+                "type": "forge:nbt",
+                "item": "mysticalagriculture:supremium_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "E": {
+                "type": "forge:nbt",
+                "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "F": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_fire_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "G": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_ice_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "H": {
+                "item": "ae2:singularity"
+            },
+            "I": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_lightning_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "J": {
+                "type": "forge:nbt",
+                "item": "blue_skies:charoite_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "K": {
+                "type": "forge:nbt",
+                "item": "bloodmagic:livingleggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "L": {
+                "type": "forge:nbt",
+                "item": "mythicbotany:alfsteel_leggings",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            }
+        },
+        "result": {
+          "item": "kubejs:fused_leggings"
+        }
+    })
+
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            "         ",
+            "         ",
+            "  ABCBA  ",
+            "  BDEFB  ",
+            "  CGHIC  ",
+            "  BJKLB  ",
+            "  ABCBA  ",
+            "         ",
+            "         "
+        ],
+        "key": {
+            "A": {
+                "item": "extendedcrafting:black_iron_block"
+            },
+            "B": {
+                "item": "extendedcrafting:black_iron_ingot"
+            },
+            "C": {
+                "item": "thermal:enderium_gear"
+            },
+            "D": {
+                "type": "forge:nbt",
+                "item": "mysticalagriculture:supremium_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "E": {
+                "type": "forge:nbt",
+                "item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "F": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_fire_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "G": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_ice_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "H": {
+                "item": "ae2:singularity"
+            },
+            "I": {
+                "type": "forge:nbt",
+                "item": "iceandfire:dragonsteel_lightning_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "J": {
+                "type": "forge:nbt",
+                "item": "blue_skies:charoite_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "K": {
+                "type": "forge:nbt",
+                "item": "bloodmagic:livingboots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            },
+            "L": {
+                "type": "forge:nbt",
+                "item": "mythicbotany:alfsteel_boots",
+                "count": 1,
+                "nbt": "{Damage:0}"
+            }
+        },
+        "result": {
+          "item": "kubejs:fused_boots"
         }
     })
 
@@ -299,331 +619,11 @@ onEvent('recipes', event => {
   		"pattern": [
   			"         ",
   			"         ",
-    		"  ABCBA  ",
-    		"  BDEFB  ",
-    		"  CGHIC  ",
-    		"  BJKLB  ",
-    		"  ABCBA  ",
-    		"         ",
-    		"         "
-    	],
-    	"key": {
-    		"A": {
-    			"item": "extendedcrafting:black_iron_block"
-    		},
-    		"B": {
-      			"item": "extendedcrafting:black_iron_ingot"
-    		},
-    		"C": {
-      			"item": "thermal:enderium_gear"
-    		},
-    		"D": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:compressed_iron_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"E": {
-      			"type": "forge:nbt",
-      			"item": "minecraft:netherite_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"F": {
-      			"type": "forge:nbt",
-      			"item": "bloodmagic:livinghelmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"G": {
-      			"type": "forge:nbt",
-      			"item": "mysticalagriculture:supremium_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"H": {
-      			"item": "ae2:singularity"
-    		},
-    		"I": {
-      			"type": "forge:nbt",
-      			"item": "cataclysm:ignitium_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"J": {
-      			"type": "forge:nbt",
-      			"item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"K": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:pneumatic_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"L": {
-      			"type": "forge:nbt",
-      			"item": "mythicbotany:alfsteel_helmet",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		}
-    	},
-    	"result": {
-    		"item": "kubejs:fused_helmet"
-    	}
-    })
-
-    event.custom({
-    	"type": "extendedcrafting:shaped_table",
-    	"pattern": [
-    		"         ",
-    		"         ",
-    		"  ABCBA  ",
-    		"  BDEFB  ",
-    		"  CGHIC  ",
-    		"  BJKLB  ",
-    		"  ABCBA  ",
-    		"         ",
-    		"         "
-    	],
-    	"key": {
-    		"A": {
-    			"item": "extendedcrafting:black_iron_block"
-    		},
-    		"B": {
-      			"item": "extendedcrafting:black_iron_ingot"
-    		},
-    		"C": {
-      			"item": "thermal:enderium_gear"
-    		},
-    		"D": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:compressed_iron_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"E": {
-      			"type": "forge:nbt",
-      			"item": "minecraft:netherite_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"F": {
-      			"type": "forge:nbt",
-      			"item": "bloodmagic:livingplate",
-      			"count": 1,
-      			"nbt": "{Damage:0,livingStats:{maxPoints:100,upgrades:[]}}"
-    		},
-    		"G": {
-      			"type": "forge:nbt",
-      			"item": "mysticalagriculture:supremium_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"H": {
-      			"item": "ae2:singularity"
-    		},
-    		"I": {
-      			"type": "forge:nbt",
-      			"item": "cataclysm:ignitium_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"J": {
-      			"type": "forge:nbt",
-      			"item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"K": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:pneumatic_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"L": {
-      			"type": "forge:nbt",
-      			"item": "mythicbotany:alfsteel_chestplate",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		}
-    	},
-    	"result": {
-    		"item": "kubejs:fused_chestplate"
-    	}
-    })
-
-    event.custom({
-    	"type": "extendedcrafting:shaped_table",
-    	"pattern": [
-    		"         ",
-    		"         ",
-    		"  ABCBA  ",
-    		"  BDEFB  ",
-    		"  CGHIC  ",
-    		"  BJKLB  ",
-    		"  ABCBA  ",
-    		"         ",
-    		"         "
-    	],
-    	"key": {
-    		"A": {
-    			"item": "extendedcrafting:black_iron_block"
-    		},
-    		"B": {
-    			"item": "extendedcrafting:black_iron_ingot"
-    		},
-    		"C": {
-      			"item": "thermal:enderium_gear"
-    		},
-    		"D": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:compressed_iron_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"E": {
-      			"type": "forge:nbt",
-      			"item": "minecraft:netherite_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"F": {
-      			"type": "forge:nbt",
-      			"item": "bloodmagic:livingleggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"G": {
-      			"type": "forge:nbt",
-      			"item": "mysticalagriculture:supremium_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"H": {
-      			"item": "ae2:singularity"
-    		},
-    		"I": {
-      			"type": "forge:nbt",
-      			"item": "cataclysm:ignitium_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"J": {
-      			"type": "forge:nbt",
-      			"item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"K": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:pneumatic_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		},
-    		"L": {
-      			"type": "forge:nbt",
-      			"item": "mythicbotany:alfsteel_leggings",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-    		}
-    	},
-    	"result": {
-    		"item": "kubejs:fused_leggings"
-    	}
-    })
-
-    event.custom({
-    	"type": "extendedcrafting:shaped_table",
-    	"pattern": [
-    		"         ",
-    		"         ",
-    		"  ABCBA  ",
-    		"  BDEFB  ",
-    		"  CGHIC  ",
-    		"  BJKLB  ",
-    		"  ABCBA  ",
-    		"         ",
-    		"         "
-    	],
-    	"key": {
-    		"A": {
-    			"item": "extendedcrafting:black_iron_block"
-    		},
-    		"B": {
-    			"item": "extendedcrafting:black_iron_ingot"
-    		},
-    		"C": {
-    			"item": "thermal:enderium_gear"
-    		},
-    		"D": {
-    			"type": "forge:nbt",
-      			"item": "pneumaticcraft:compressed_iron_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-    		"E": {
-    			"type": "forge:nbt",
-    			"item": "minecraft:netherite_boots",
-    			"count": 1,
-    			"nbt": "{Damage:0}"
-    		},
-    		"F": {
-    			"type": "forge:nbt",
-    			"item": "bloodmagic:livingboots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-      		"G": {
-      			"type": "forge:nbt",
-      			"item": "mysticalagriculture:supremium_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-      		"H": {
-      			"item": "ae2:singularity"
-      		},
-    		"I": {
-      			"type": "forge:nbt",
-      			"item": "cataclysm:ignitium_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-    		"J": {
-      			"type": "forge:nbt",
-      			"item": "upgradednetherite_ultimate:ultimate_upgraded_netherite_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-      		"K": {
-      			"type": "forge:nbt",
-      			"item": "pneumaticcraft:pneumatic_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		},
-      		"L": {
-      			"type": "forge:nbt",
-      			"item": "mythicbotany:alfsteel_boots",
-      			"count": 1,
-      			"nbt": "{Damage:0}"
-      		}
-      	},
-      	"result": {
-      		"item": "kubejs:fused_boots"
-      	}
-    })
-
-  	event.custom({
-  		"type": "extendedcrafting:shaped_table",
-  		"pattern": [
-  			"         ",
-  			"         ",
-  			"AAAAAAAAA",
-    		"ABCDEFGHA",
-    		"AIJKLMNOA",
-    		"APQRSTUVA",
-    		"AAAAAAAAA",
+  			"AWWWAWWWA",
+    		"WBCDEFGHW",
+    		"WIJKLMNOW",
+    		"WPQRSTUVW",
+    		"AWWWAWWWA",
     		"         ",
     		"         "
     	],
@@ -729,7 +729,10 @@ onEvent('recipes', event => {
       			"item": "extendedcrafting:singularity",
       			"count": 1,
       			"nbt": "{Id:\"extendedcrafting:glowstone\"}"
-    		}
+    		},
+            "W": {
+                "item": "extendedcrafting:crystaltine_ingot"
+            }
   		},
   		"result": {
   			"item": "2x extendedcrafting:the_ultimate_ingot"
@@ -757,13 +760,14 @@ onEvent('recipes', event => {
     event.smithing('ae2:creative_fluid_cell', 'ae2:fluid_storage_cell_256k', 'extendedcrafting:the_ultimate_ingot')
     event.smithing('botania:creative_pool', 'botania:mana_pool', 'extendedcrafting:the_ultimate_ingot')
     event.smithing('create:creative_motor', 'createaddition:electric_motor', 'extendedcrafting:the_ultimate_ingot')
+    event.smithing('create:creative_fluid_tank', 'create:fluid_tank', 'extendedcrafting:the_ultimate_ingot')
     event.smithing('create:creative_blaze_cake', 'create:blaze_cake', 'extendedcrafting:the_ultimate_nugget')
     event.smithing('createaddition:creative_energy', 'createaddition:alternator', 'extendedcrafting:the_ultimate_ingot')
     event.smithing('4x iceandfire:creative_dragon_meal', 'iceandfire:dragon_meal', 'extendedcrafting:the_ultimate_nugget')
     event.smithing('pipez:infinity_upgrade', 'pipez:ultimate_upgrade', 'extendedcrafting:the_ultimate_nugget')
     event.smithing('pneumaticcraft:creative_compressor', 'pneumaticcraft:advanced_air_compressor', 'extendedcrafting:the_ultimate_ingot')
     event.smithing('2x pneumaticcraft:creative_compressed_iron_block', 'pneumaticcraft:compressed_iron_block', 'extendedcrafting:the_ultimate_ingot')
-
+    
     event.custom({
         "type": "extendedcrafting:shaped_table",
         "pattern": [
@@ -776,22 +780,22 @@ onEvent('recipes', event => {
             "  ABBBA  ",
             "         ",
             "         "
-        ],
+            ],
         "key": {
             "A": {
-                "item": "extendedcrafting:the_ultimate_block"
+                "item": "metalbarrels:netherite_barrel"
             },
             "B": {
                 "item": "extendedcrafting:the_ultimate_ingot"
             },
             "C": {
-                "item": "ae2:singularity"
-            },
-            "D": {
                 "item": "ae2:cell_component_256k"
             },
-            "E": {
+            "D": {
                 "item": "extendedcrafting:ultimate_singularity"
+            },
+            "E": {
+                "item": "ae2:singularity"
             }
         },
         "result": {

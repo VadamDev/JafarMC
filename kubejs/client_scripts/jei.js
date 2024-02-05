@@ -107,6 +107,8 @@ onEvent('jei.hide.items', event => {
 
 		'upgradednetherite_creative:creative_upgraded_netherite_ingot',
 
+		'compactmachines:solid_wall',
+
 		'bhc:wither_bone'
 	])
 })
@@ -148,4 +150,6 @@ onEvent('item.tooltip', event => {
     event.add('pipez:ultimate_upgrade', ['', '§c524288 FE/t', '§b1280 items per seconds', '', '§a+ Redstone modes', '§a+ Distribution modes', '§a+ Filter modes', '§a+ Filters', ''])
 
     event.add('createaddition:modular_accumulator', ['', '§7Capacity: 1M FE per block', '§7Max Size: 5x5x7', ''])
+
+    event.add('extendedcrafting:the_ultimate_ingot', ['', '§eTip: Use it to create the creative crate !', ''])
 })
